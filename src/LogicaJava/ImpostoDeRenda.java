@@ -1,12 +1,13 @@
-package InicianteJava;
+package LogicaJava;
 
 import java.util.Scanner;
 
 public class ImpostoDeRenda {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
+        double salary;
         System.out.println("Digite o seu salário:");
-        double salary = scanner.nextDouble();
+        salary = scanner.nextDouble();
         if (salary >= 2259.21 && salary <= 2826.65){
             salary = salary * (7.5/100); //7.5%
             System.out.println("Imposto: 7.5%");
